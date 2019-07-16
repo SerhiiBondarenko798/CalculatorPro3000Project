@@ -20,7 +20,7 @@ Config.set('graphics', 'resizable', 1)
 class CalcApp(App):
 	def build(self):
 		Calc_mainscreen = FloatLayout(size_hint=(1, 1))
-		kalk_vijet = GridLayout(cols=4, size_hint=(1,.80), pos_hint={'center_x' : 0.5, 'y' :0})
+		kalk_vijet = GridLayout(cols=4, spacing=3, padding = 3, size_hint=(1,.80), pos_hint={'center_x' : 0.5, 'y' :0})
 		kalk_vijet.add_widget(Button(text='+', font_size=30))
 		kalk_vijet.add_widget(Button(text='1', font_size=30))
 		kalk_vijet.add_widget(Button(text='2', font_size=30))
@@ -36,7 +36,7 @@ class CalcApp(App):
 		kalk_vijet.add_widget(Button(text='/', font_size=30))
 		kalk_vijet.add_widget(Button(text='.', font_size=30))
 		kalk_vijet.add_widget(Button(text='0', font_size=30))
-		kalk_vijet.add_widget(Button(text='!', font_size=30))
+		kalk_vijet.add_widget(Button(text='=', font_size=30))
 		output_screen = Label(text='zalupa',size_hint=(1,.20),  pos_hint={'center_x' : 0.5, 'top' :1})
 		Calc_mainscreen.add_widget(kalk_vijet)
 		Calc_mainscreen.add_widget(output_screen)
