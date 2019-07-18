@@ -43,7 +43,7 @@ class CalcApp(App):
 		kalk_vijet.add_widget(Button(text='0', font_size=30))
 		kalk_vijet.add_widget(Button(text='=', font_size=30))
 
-		output_screen = Label(text=screen_text,font_size = 50,size_hint=(1,.20),  pos_hint={'center_x' : 0.5, 'top' :1}, halign='right', text_size = (screen_width-12, screen_height*.20 -12))
+		output_screen = Label(text=screen_text, font_size = 50,size_hint=(1,.20),  pos_hint={'center_x' : 0.5, 'top' :1}, halign='right', text_size = (screen_width-12, screen_height*.20 -12))
 		Calc_mainscreen.add_widget(kalk_vijet)
 		Calc_mainscreen.add_widget(output_screen)
 		return Calc_mainscreen
